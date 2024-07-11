@@ -1,0 +1,46 @@
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom-gradient {
+  background: #222222;
+}
+
+.login-box, .register-box, .add-workout-box {
+  border: 2px solid #f0ad4e;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.login-box h1, .register-box h1, .add-workout-box h2 {
+  color: #f0ad4e;
+}
+
+.login-box form, .register-box form, .add-workout-box form {
+  margin-top: 20px;
+}
+
+.login-box .form-group label, .register-box .form-group label, .add-workout-box .form-group label {
+  color: #f0ad4e;
+}
+
+.login-box .form-group .form-control, .register-box .form-group .form-control, .add-workout-box .form-group .form-control {
+  border-color: #f0ad4e;
+}
+
+.login-box .btn-warning, .register-box .btn-warning, .add-workout-box .btn-warning {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.login-box .btn-warning:hover, .register-box .btn-warning:hover, .add-workout-box .btn-warning:hover {
+  background-color: #ec971f;
+  border-color: #ec971f;
+}
+
