@@ -18,8 +18,8 @@ export default function AppNavbar() {
                         <Nav.Link as={NavLink} to="/" exact className="text-dark">Home</Nav.Link>
                         {user.id !== null ? (
                             <>
-                                <Nav.Link as={NavLink} to="/workouts" exact className="text-dark">My Workouts</Nav.Link>
-                                <Nav.Link as={Link} to="/addWorkout" className="text-dark">Add Workout</Nav.Link>
+                                <Nav.Link as={NavLink} to="/workouts/getMyWorkouts" exact className="text-dark">My Workouts</Nav.Link>
+                                <Nav.Link as={Link} to="/workouts/addWorkout" className="text-dark">Add Workout</Nav.Link>
                                 <Nav.Link as={Link} to="/logout" className="text-dark">Logout</Nav.Link>
                             </>
                         ) : (

@@ -71,7 +71,7 @@ export default function Login() {
     }, [email, password]);
 
     if (redirectToWorkouts || user.id) {
-        return <Navigate to="/workouts" />;
+        return <Navigate to="/workouts/getMyWorkouts" />;
     }
 
     return (
