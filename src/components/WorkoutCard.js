@@ -14,7 +14,7 @@ export default function WorkoutCard({ workout, fetchData }) {
 
   const handleUpdate = (id) => {
     fetch(`https://fitness-tracker-1-d3lc.onrender.com/workouts/updateWorkout/${id}`, {
-      method: 'PUT',
+      method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('token')}`
@@ -73,7 +73,7 @@ export default function WorkoutCard({ workout, fetchData }) {
 
   const handleComplete = (id) => {
     fetch(`https://fitness-tracker-1-d3lc.onrender.com/workouts/completeWorkoutStatus/${id}`, {
-      method: 'PUT',
+      method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('token')}`
